@@ -222,11 +222,19 @@ footer {
 
     .container__entry {
         height: 50%;
-        padding-bottom: 6%;
+        padding-bottom: 4%;
+        grid-template-rows: 70% 30%;
+    }
+
+    .container__entry .container__button {
+        flex-direction: column;
+        align-items: center;
     }
 
     .container__entry button {
-        width: 40%;
+        width: 90%;
+        height: 45%;
+        margin: auto 0;
     }
 
     .container__output {
