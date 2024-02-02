@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Encriptador</title>
+    <link rel="icon" href="img/lock-fill.svg">
+</head>
+<body>
+    <header>
+        <img src="img/logo.svg" alt="Logo">
+        <img src="img/arrow-clockwise.svg" alt="Reset" id="reset">
+    </header>
+    <main>
+        <div class="container__main">
+            <div class="container__entry">
+                <div class="container__textentry">
+                    <textarea placeholder="Ingresa tu texto aquí"></textarea>
+                </div>
+                
+                <div class="container__button">
+                    <button><span class="bi bi-lock-fill"></span> Encriptar</button>
+                    <button><span class="bi bi-unlock-fill"></span> Desencriptar</button>
+                </div>
+            </div>
+            <div class="container__output">
+                <p id="output"></p>
+                <div class="container__message">
+                    <img src="img/imagenplaceholder.svg" alt="Imagen">
+                    <p class="message">Ningún mensaje fue encontrado</p>
+                    <p class="description">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                
+                <button><span class="bi bi-copy"></span> Copiar</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
