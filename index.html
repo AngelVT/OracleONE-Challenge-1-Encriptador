@@ -18,17 +18,17 @@
         <div class="container__main">
             <div class="container__entry">
                 <div class="container__textentry">
-                    <textarea placeholder="Ingresa tu texto aquí"></textarea>
+                    <textarea id="input" placeholder="Ingresa tu texto aquí"></textarea>
                 </div>
                 
                 <div class="container__button">
-                    <button><span class="bi bi-lock-fill"></span> Encriptar</button>
-                    <button><span class="bi bi-unlock-fill"></span> Desencriptar</button>
+                    <button id="crypt"><span class="bi bi-lock-fill"></span> Encriptar</button>
+                    <button id="decrypt"><span class="bi bi-unlock-fill"></span> Desencriptar</button>
                 </div>
             </div>
             <div class="container__output">
-                <p id="output"></p>
-                <div class="container__message">
+                <textarea id="output" readonly></textarea>
+                <div id="outputPlaceholder" class="container__message">
                     <img src="img/imagenplaceholder.svg" alt="Imagen">
                     <p class="message">Ningún mensaje fue encontrado</p>
                     <p class="description">Ingresa el texto que desees encriptar o desencriptar.</p>
