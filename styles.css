@@ -41,6 +41,7 @@ header #reset:hover {
 
 header #reset:active {
     transform: scale(1.2);
+    transform: rotate(360deg);
 }
 
 .container__main {
