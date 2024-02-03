@@ -28,19 +28,25 @@ header img {
     width: 2%;
 }
 
-header #reset {
+header .interact {
     width: 3.5%;
     transition: 0.5s;
 }
 
-header #reset:hover {
+header .interact:hover {
     cursor: pointer;
     transform: scale(1.1);
+}
+
+header .interact:active {
+    transform: scale(1.2);
+}
+
+header #switch:active {
     transform: rotate(360deg);
 }
 
-header #reset:active {
-    transform: scale(1.2);
+header #reset:hover {
     transform: rotate(360deg);
 }
 
@@ -149,21 +155,13 @@ button:active {
     margin: 0 auto;
 }
 
-footer {
-    display: none;
-    background-color: var(--primario);
-    padding: 2%;
-    color: var(--blanco);
-    text-align: center;
-}
-
 /*Tablet*/
 @media only screen and (max-width:768px) {
     header img {
         width: 3%;
     }
 
-    header #reset {
+    header .interact{
         width: 5%;
     }
 
@@ -208,7 +206,7 @@ footer {
         width: 5%;
     }
 
-    header #reset {
+    header .interact {
         width: 8%;
     }
 

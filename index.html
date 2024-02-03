@@ -12,7 +12,8 @@
 <body>
     <header>
         <img src="img/logo.svg" alt="Logo">
-        <img src="img/arrow-clockwise.svg" alt="Reset" id="reset">
+        <img src="img/arrow-bar-left.svg" alt="swich" id="switch" class="interact" onclick="switchFields();">
+        <img src="img/arrow-clockwise.svg" alt="Reset" id="reset" class="interact" onclick="resetFields();">
     </header>
     <main>
         <div class="container__main">
@@ -22,19 +23,19 @@
                 </div>
                 
                 <div class="container__button">
-                    <button id="crypt"><span class="bi bi-lock-fill"></span> Encriptar</button>
-                    <button id="decrypt"><span class="bi bi-unlock-fill"></span> Desencriptar</button>
+                    <button id="crypt" onclick="cryptText();"><span class="bi bi-lock-fill"></span> Encriptar</button>
+                    <button id="decrypt" onclick="decryptText();"><span class="bi bi-unlock-fill"></span> Desencriptar</button>
                 </div>
             </div>
             <div class="container__output">
                 <textarea id="output" readonly></textarea>
                 <div id="outputPlaceholder" class="container__message">
                     <img src="img/imagenplaceholder.svg" alt="Imagen">
-                    <p class="message">Ningún mensaje fue encontrado</p>
-                    <p class="description">Ingresa el texto que desees encriptar o desencriptar.</p>
+                    <p class="message" id="message">Encriptador</p>
+                    <p class="description" id="description">Por favor ingresa un mensaje a encriptar en el otro panel.</p>
                 </div>
                 
-                <button><span class="bi bi-copy"></span> Copiar</button>
+                <button onclick="copyOutput();"><span class="bi bi-copy"></span> Copiar</button>
             </div>
         </div>
     </main>
