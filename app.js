@@ -74,6 +74,8 @@ function showOutput(text) {
 //funcion de validacion de entradas
 function validation(inputText) {
     if(inputText == "") {
+        placeholder.style.display = "block";
+        output.style.display = "none";
         message.style.color = "red";
         description.style.color = "red";
         message.innerHTML = "<span class='bi bi-exclamation-octagon'></span> Error";
@@ -82,6 +84,8 @@ function validation(inputText) {
     }
 
     if(inputText.match(excluded)) {
+        placeholder.style.display = "block";
+        output.style.display = "none";
         message.style.color = "red";
         description.style.color = "red";
         message.innerHTML = "<span class='bi bi-exclamation-octagon'></span> Error";
