@@ -7,7 +7,7 @@ const description = document.getElementById("description");
 //declaracion de caracteres excluidos usando expresiones regulares
 const excluded = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù'ñÑA-Z]/g;
 //llave de encriptacion
-const key = {"a":"x4lph4","e":"x3ch0","i":"x1nd14","o":"x0r4n93","u":"xum373ll4", " ":"y1y"};
+const key = {"a":"4lph4","e":"3ch0","i":"1nd14","o":"0r4n93","u":"0m373ll4", " ":"x"};
 
 //funcion para resetear el encriptador a su estado original
 function resetFields() {
@@ -18,7 +18,7 @@ function resetFields() {
     message.style.color = "#000";
     description.style.color = "#000";
     message.innerHTML = "Encriptador";
-    description.innerHTML = "Por favor ingresa un mensaje a encriptar en el otro panel.";
+    description.innerHTML = "Por favor ingresa un mensaje a encriptar en el otro panel (solo minusculas).";
     return;
 }
 
@@ -77,7 +77,7 @@ function validation(inputText) {
         message.style.color = "red";
         description.style.color = "red";
         message.innerHTML = "<span class='bi bi-exclamation-octagon'></span> Error";
-        description.innerHTML = "Por favor ingresa un mensaje a encriptar en el otro panel.";
+        description.innerHTML = "Por favor ingresa un mensaje a encriptar en el otro panel (solo minusculas).";
         return false;
     }
 

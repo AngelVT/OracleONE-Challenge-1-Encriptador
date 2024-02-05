@@ -1,5 +1,6 @@
 :root {
     --primario: #0A3871;
+    --complementario: #495057;
     --blanco: #ffffff;
     --negro: #000000;
 }
@@ -82,6 +83,8 @@ textarea {
     padding: 2%;
     resize: none;
     border: none;
+    color: var(--primario);
+    font-size: 32px;
 }
 
 textarea:focus {
@@ -97,6 +100,7 @@ button {
     padding: 1% 0;
     margin: 0 4%;
     transition: 0.1s;
+    font-size: 20px;
 }
 
 button:hover {
@@ -130,6 +134,7 @@ button:active {
 #output {
     display: none;
     margin: 0;
+    color: var(--complementario);
 }
 
 .container__output img {
@@ -145,6 +150,11 @@ button:active {
 
 .container__output .message {
     font-weight: bold;
+    font-size: 25px;
+}
+
+.container__output .description {
+    font-size: 20px;
 }
 
 .container__output button {
@@ -245,5 +255,9 @@ button:active {
     .container__output button {
         width: 85%;
         height: 15%;
+    }
+
+    button {
+        font-size: 15px;
     }
 }
