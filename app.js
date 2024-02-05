@@ -7,7 +7,7 @@ const description = document.getElementById("description");
 //declaracion de caracteres excluidos usando expresiones regulares
 const excluded = /[~!@#$%^&*()_+|}{[\]\\\/?><:"`;.,áéíóúàèìòù'ñÑA-Z]/g;
 //llave de encriptacion
-const key = {"a":"4lph4","e":"3ch0","i":"1nd14","o":"0r4n93","u":"0m373ll4", " ":"x"};
+const key = {"a":"4lph4","e":"3ch0","i":"1nd14","o":"0r4n93","u":"0m373ll4", " ":"10"};
 
 //funcion para resetear el encriptador a su estado original
 function resetFields() {
